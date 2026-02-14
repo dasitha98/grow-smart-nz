@@ -5,7 +5,8 @@ import { ArrowRight, Play } from "lucide-react";
 const HeroSection4 = () => (
   <section className="relative overflow-hidden bg-background">
     {/* Accent line */}
-    <div className="absolute rigth-0 top-0 h-1 w-full bg-gradient-to-r from-gold via-gold/60 to-transparent" />
+    <div className="absolute right-0 top-0 h-1 w-full bg-gradient-to-r from-gold via-gold/60 to-transparent" />
+    <div className="absolute right-0 top-0 h-1 w-full bg-gradient-to-r from-gold via-gold/60 to-transparent" />
 
     <div className="section-padding">
       <div className="container-narrow mx-auto">
