@@ -15,18 +15,17 @@ const HeroSection4 = () => (
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5">
               <span className="h-2 w-2 animate-pulse rounded-full bg-gold" />
               <span className="text-xs font-bold uppercase tracking-widest text-gold">
-                Now taking clients
+                Digital Marketing & IT Solutions
               </span>
             </div>
 
             <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-[3.25rem]">
-              Your Next Client Is{" "}
-              <span className="text-gold">Already Searching</span> for You Online
+              Your Next Client Is <span className="text-gold">Already Searching</span> for You Online
             </h1>
 
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              We make sure they find you — with a strategy-first growth system that
-              combines SEO, paid ads, conversion design, and smart automation.
+              We make sure they find you — with a strategy-first growth system that combines SEO, paid ads, conversion
+              design, and smart automation.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
