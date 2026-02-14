@@ -6,7 +6,7 @@ const HeroSection4 = () => (
   <section className="relative overflow-hidden bg-background">
     {/* Subtle gradient orbs */}
     <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-gold/5 blur-3xl" />
-    <div className="pointer-events-none absolute -bottom-40 -right-40 h-[600px] w-[600px] rounded-full bg-navy/5 blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-40 -left-40 h-[600px] w-[600px] rounded-full bg-navy/5 blur-3xl" />
 
     <div className="relative section-padding">
       <div className="container-narrow mx-auto">
