@@ -1,14 +1,41 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import TopBar from "@/components/layout/TopBar";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import HeroSection from "@/components/home/HeroSection";
+import CredibilitySection from "@/components/home/CredibilitySection";
+import ProblemsSection from "@/components/home/ProblemsSection";
+import SolutionSection from "@/components/home/SolutionSection";
+import WhyDifferentSection from "@/components/home/WhyDifferentSection";
+import CompeteSmarterSection from "@/components/home/CompeteSmarterSection";
+import BeforeAfterSection from "@/components/home/BeforeAfterSection";
+import ServicesSection from "@/components/home/ServicesSection";
+import WorkSection from "@/components/home/WorkSection";
+import LaunchPlanSection from "@/components/home/LaunchPlanSection";
+import FAQSection from "@/components/home/FAQSection";
+import FinalCTASection from "@/components/home/FinalCTASection";
+import ContactFormSection from "@/components/home/ContactFormSection";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <>
+    <TopBar />
+    <Navbar />
+    <main>
+      <HeroSection />
+      <CredibilitySection />
+      <ProblemsSection />
+      <SolutionSection />
+      <WhyDifferentSection />
+      <CompeteSmarterSection />
+      <BeforeAfterSection />
+      <ServicesSection />
+      <WorkSection />
+      <LaunchPlanSection />
+      <FAQSection />
+      <FinalCTASection />
+      <ContactFormSection />
+    </main>
+    <Footer />
+  </>
+);
 
 export default Index;
