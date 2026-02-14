@@ -17,7 +17,7 @@ const HeroSection = () => (
           <div>
             <div className="section-badge mb-6">Digital Marketing & IT Solutions</div>
             <h1 className="text-4xl font-extrabold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
-              <span className="section-badge mb-6">{siteConfig.hero.headlineHighlight}</span>{" "}
+              <span className="text-gold">{siteConfig.hero.headlineHighlight}</span>{" "}
               <span>{siteConfig.hero.headline}</span>
             </h1>
             <p className="mt-6 text-lg text-navy-foreground/70 sm:text-xl">{siteConfig.hero.subheadline}</p>
