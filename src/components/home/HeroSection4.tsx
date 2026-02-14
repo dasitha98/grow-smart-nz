@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/siteConfig";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection4 = () => (
   <section className="relative overflow-hidden">
