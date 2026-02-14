@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 const FinalCTASection = () => (
-  <section className="navy-section section-padding">
-    <div className="container-narrow mx-auto text-center">
-      <h2 className="text-3xl font-bold sm:text-4xl">
-        Ready to Expand Your Client Base With Confidence?
+  <section className="navy-gradient section-padding">
+    <div className="container-narrow mx-auto text-center text-navy-foreground">
+      <span className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold">
+        Let's Talk
+      </span>
+      <h2 className="mt-6 text-3xl font-bold sm:text-4xl lg:text-5xl">
+        Ready to Expand Your Client Base<br className="hidden sm:block" /> With Confidence?
       </h2>
-      <p className="mx-auto mt-4 max-w-xl text-navy-foreground/70">
+      <p className="mx-auto mt-6 max-w-xl text-navy-foreground/60">
         Let's build a system that attracts the right clients, converts them consistently, and scales with your business.
       </p>
-      <Link
-        to="/contact"
-        className="mt-8 inline-block rounded-md bg-gold px-8 py-4 text-sm font-bold text-gold-foreground transition-colors hover:bg-gold/90"
-      >
-        Book Strategy Call
+      <Link to="/contact" className="btn-gold mt-10 text-base">
+        Book Strategy Call <ArrowRight className="ml-2 h-5 w-5" />
       </Link>
     </div>
   </section>
