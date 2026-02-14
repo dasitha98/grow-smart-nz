@@ -1,37 +1,48 @@
 import { siteConfig } from "@/config/siteConfig";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X, Check } from "lucide-react";
 
 const BeforeAfterSection = () => (
-  <section className="navy-section section-padding">
-    <div className="container-narrow mx-auto">
-      <h2 className="text-center text-3xl font-bold sm:text-4xl">Before & After</h2>
-      <p className="mx-auto mt-3 max-w-lg text-center text-sm text-navy-foreground/60">
-        Example targets — what transformation looks like for a typical engagement.
-      </p>
+  <section className="navy-gradient section-padding">
+    <div className="container-narrow mx-auto text-navy-foreground">
+      <div className="text-center">
+        <span className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold">
+          Transformation
+        </span>
+        <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Before & After</h2>
+        <p className="mx-auto mt-3 max-w-lg text-sm text-navy-foreground/50">
+          Example targets — what transformation looks like for a typical engagement.
+        </p>
+      </div>
 
-      <div className="mt-12 grid items-center gap-8 md:grid-cols-[1fr_auto_1fr]">
-        <div className="rounded-xl border border-navy-foreground/10 p-8">
-          <h3 className="mb-6 text-sm font-bold uppercase tracking-widest text-navy-foreground/50">Before</h3>
-          <ul className="space-y-4">
+      <div className="mt-14 grid items-stretch gap-8 md:grid-cols-[1fr_auto_1fr]">
+        <div className="rounded-2xl border border-navy-foreground/10 bg-navy-foreground/5 p-8">
+          <h3 className="mb-8 text-sm font-bold uppercase tracking-widest text-navy-foreground/40">Before</h3>
+          <ul className="space-y-5">
             {siteConfig.beforeAfter.before.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm text-navy-foreground/70">
-                <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-destructive" />
+              <li key={i} className="flex items-start gap-4 text-sm text-navy-foreground/60">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-destructive/20">
+                  <X className="h-3 w-3 text-destructive" />
+                </div>
                 {item}
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="hidden md:flex">
-          <ArrowRight className="h-10 w-10 text-gold" />
+        <div className="hidden items-center md:flex">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gold">
+            <ArrowRight className="h-7 w-7 text-gold-foreground" />
+          </div>
         </div>
 
-        <div className="rounded-xl border border-gold/30 bg-gold/5 p-8">
-          <h3 className="mb-6 text-sm font-bold uppercase tracking-widest text-gold">After</h3>
-          <ul className="space-y-4">
+        <div className="rounded-2xl border border-gold/30 bg-gold/5 p-8">
+          <h3 className="mb-8 text-sm font-bold uppercase tracking-widest text-gold">After</h3>
+          <ul className="space-y-5">
             {siteConfig.beforeAfter.after.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm text-navy-foreground/90">
-                <span className="mt-0.5 h-2 w-2 shrink-0 rounded-full bg-gold" />
+              <li key={i} className="flex items-start gap-4 text-sm text-navy-foreground/90">
+                <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold/20">
+                  <Check className="h-3 w-3 text-gold" />
+                </div>
                 {item}
               </li>
             ))}

@@ -34,13 +34,14 @@
     --input: 220 13% 91%;
     --ring: 45 99% 54%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --navy: 222 47% 11%;
     --navy-foreground: 0 0% 100%;
+    --navy-light: 222 30% 18%;
     --gold: 45 99% 54%;
     --gold-foreground: 222 47% 11%;
-    --soft-gray: 220 14% 96%;
+    --soft-gray: 220 20% 97%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -69,16 +70,11 @@
 
 @layer utilities {
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+    @apply px-4 sm:px-6 lg:px-8 py-20 md:py-28;
   }
 
   .container-narrow {
     @apply max-w-6xl mx-auto;
-  }
-
-  .text-gradient-gold {
-    @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(45 99% 54%), hsl(40 95% 60%));
   }
 
   .navy-section {
@@ -95,4 +91,55 @@
     text-underline-offset: 6px;
     text-decoration-thickness: 3px;
   }
+
+  .card-elevated {
+    @apply rounded-2xl border border-border bg-background shadow-sm transition-all duration-300;
+  }
+
+  .card-elevated:hover {
+    @apply shadow-xl -translate-y-1;
+    border-color: hsl(var(--gold) / 0.3);
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-lg bg-gold px-7 py-3.5 text-sm font-bold text-gold-foreground transition-all duration-200;
+    box-shadow: 0 4px 14px 0 hsl(var(--gold) / 0.4);
+  }
+
+  .btn-gold:hover {
+    @apply scale-[1.02];
+    box-shadow: 0 6px 20px 0 hsl(var(--gold) / 0.5);
+  }
+
+  .btn-navy {
+    @apply inline-flex items-center justify-center rounded-lg bg-primary px-7 py-3.5 text-sm font-bold text-primary-foreground transition-all duration-200;
+    box-shadow: 0 4px 14px 0 hsl(var(--navy) / 0.3);
+  }
+
+  .btn-navy:hover {
+    @apply scale-[1.02] bg-primary/90;
+  }
+
+  .gold-icon-box {
+    @apply flex h-14 w-14 items-center justify-center rounded-xl;
+    background: linear-gradient(135deg, hsl(var(--gold) / 0.15), hsl(var(--gold) / 0.05));
+    border: 1px solid hsl(var(--gold) / 0.2);
+  }
+
+  .section-badge {
+    @apply inline-flex items-center rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold;
+  }
+
+  .navy-gradient {
+    background: linear-gradient(135deg, hsl(var(--navy)), hsl(var(--navy-light)));
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
