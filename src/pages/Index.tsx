@@ -1,47 +1,38 @@
 import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import HeroSection1 from "@/components/home/HeroSection1";
-import HeroSection2 from "@/components/home/HeroSection2";
-import HeroSection3 from "@/components/home/HeroSection3";
-import HeroSection4 from "@/components/home/HeroSection4";
-import HeroSection5 from "@/components/home/HeroSection5";
+import HeroSection from "@/components/home/HeroSection";
+import CredibilitySection from "@/components/home/CredibilitySection";
+import ProblemsSection from "@/components/home/ProblemsSection";
+import SolutionSection from "@/components/home/SolutionSection";
+import WhyDifferentSection from "@/components/home/WhyDifferentSection";
+import CompeteSmarterSection from "@/components/home/CompeteSmarterSection";
+import BeforeAfterSection from "@/components/home/BeforeAfterSection";
+import ServicesSection from "@/components/home/ServicesSection";
+import WorkSection from "@/components/home/WorkSection";
+import LaunchPlanSection from "@/components/home/LaunchPlanSection";
+import FAQSection from "@/components/home/FAQSection";
+import FinalCTASection from "@/components/home/FinalCTASection";
+import ContactFormSection from "@/components/home/ContactFormSection";
 
 const Index = () => (
   <>
     <TopBar />
     <Navbar />
     <main>
-      {/* Hero Variant 1: Glassmorphic split — gradient orbs + approach card */}
-      <HeroSection1 />
-
-      <div className="navy-section section-padding text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-gold">Hero Variant 2</span>
-      </div>
-
-      {/* Hero Variant 2: Centered stats — clean elevated stat cards */}
-      <HeroSection2 />
-
-      <div className="navy-section section-padding text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-gold">Hero Variant 3</span>
-      </div>
-
-      {/* Hero Variant 3: Minimal bold type — large headline + pillar cards */}
-      <HeroSection3 />
-
-      <div className="navy-section section-padding text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-gold">Hero Variant 4</span>
-      </div>
-
-      {/* Hero Variant 4: Split with stacked feature cards */}
-      <HeroSection4 />
-
-      <div className="navy-section section-padding text-center">
-        <span className="text-xs font-bold uppercase tracking-widest text-gold">Hero Variant 5</span>
-      </div>
-
-      {/* Hero Variant 5: Geometric shapes + metric grid */}
-      <HeroSection5 />
+      <HeroSection />
+      <CredibilitySection />
+      <ProblemsSection />
+      <SolutionSection />
+      <WhyDifferentSection />
+      <CompeteSmarterSection />
+      <BeforeAfterSection />
+      <ServicesSection />
+      <WorkSection />
+      <LaunchPlanSection />
+      <FAQSection />
+      <FinalCTASection />
+      <ContactFormSection />
     </main>
     <Footer />
   </>
