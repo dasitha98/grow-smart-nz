@@ -4,11 +4,11 @@ import { ArrowRight, Play } from "lucide-react";
 
 const HeroSection4 = () => (
   <section className="relative overflow-hidden bg-background">
-    {/* Accent line */}
-    <div className="absolute right-0 top-0 h-1 w-full bg-gradient-to-r from-gold via-gold/60 to-transparent" />
-    <div className="absolute right-0 top-0 h-1 w-full bg-gradient-to-r from-gold via-gold/60 to-transparent" />
+    {/* Subtle gradient orbs */}
+    <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-gold/5 blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-40 -right-40 h-[600px] w-[600px] rounded-full bg-navy/5 blur-3xl" />
 
-    <div className="section-padding">
+    <div className="relative section-padding">
       <div className="container-narrow mx-auto">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left — copy */}
