@@ -20,7 +20,8 @@ export const siteConfig = {
   ],
 
   hero: {
-    headline: "Client Growth Starts With Strategy, Marketing & Technology.",
+    headlineHighlight: "Client ",
+    headline: "Growth Starts With Strategy, Marketing & Technology.",
     subheadline: "More Clients. Smarter Systems. Sustainable Growth.",
     ctaPrimary: "Book Strategy Call",
     ctaSecondary: "Get a Free Audit",

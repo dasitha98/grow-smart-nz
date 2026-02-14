@@ -15,15 +15,14 @@ const HeroSection = () => (
       <div className="container-narrow mx-auto">
         <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_1fr]">
           <div>
-            <div className="section-badge mb-6">
-              Digital Marketing & IT Solutions
-            </div>
+            <div className="section-badge mb-6">Digital Marketing & IT Solutions</div>
+            <h1 className="text-4xl font-extrabold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
+              {siteConfig.hero.headlineHighlight}
+            </h1>
             <h1 className="text-4xl font-extrabold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
               {siteConfig.hero.headline}
             </h1>
-            <p className="mt-6 text-lg text-navy-foreground/70 sm:text-xl">
-              {siteConfig.hero.subheadline}
-            </p>
+            <p className="mt-6 text-lg text-navy-foreground/70 sm:text-xl">{siteConfig.hero.subheadline}</p>
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Link to="/contact" className="btn-navy border border-navy-foreground/20 bg-navy-foreground text-navy">
