@@ -3,20 +3,21 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
 
 const HeroSection4 = () => (
-  <section className="relative overflow-hidden bg-background">
-    {/* Accent line */}
-    <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-gold via-gold/60 to-transparent" />
+  <section className="relative overflow-hidden">
+    {/* Background image with overlay */}
+    <div className="absolute inset-0">
+      <img src={heroBg} alt="" className="h-full w-full object-cover" />
+      <div className="absolute inset-0 bg-navy/85" />
+    </div>
 
-    <div className="section-padding">
+    <div className="relative section-padding">
       <div className="container-narrow mx-auto">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left — copy */}
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5">
               <span className="h-2 w-2 animate-pulse rounded-full bg-gold" />
-              <span className="text-xs font-bold uppercase tracking-widest text-gold">
-                Digital Marketing & IT Solutions
-              </span>
+              <span className="text-xs font-bold uppercase tracking-widest text-gold">Now taking clients</span>
             </div>
 
             <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-[3.25rem]">
