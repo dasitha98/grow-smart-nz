@@ -1,15 +1,12 @@
 import { siteConfig } from "@/config/siteConfig";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection4 = () => (
-  <section className="relative overflow-hidden">
-    {/* Background image with overlay */}
-    <div className="absolute inset-0">
-      <img src={heroBg} alt="" className="h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-navy/85" />
-    </div>
+  <section className="relative overflow-hidden bg-background">
+    {/* Subtle gradient orbs */}
+    <div className="pointer-events-none absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full bg-gold/5 blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-40 -right-40 h-[600px] w-[600px] rounded-full bg-navy/5 blur-3xl" />
 
     <div className="relative section-padding">
       <div className="container-narrow mx-auto">
