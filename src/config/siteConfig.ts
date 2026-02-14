@@ -20,25 +20,15 @@ export const siteConfig = {
   ],
 
   hero: {
-    headline: "Expand Your High-Value Client Base Through Intelligent Marketing & Technology.",
+    headline: "Client Growth Starts With Strategy, Marketing & Technology.",
     subheadline: "More Clients. Smarter Systems. Sustainable Growth.",
     ctaPrimary: "Book Strategy Call",
     ctaSecondary: "Get a Free Audit",
-    approach: [
-      "Strategy-first roadmap",
-      "Marketing + technology system",
-      "Conversion-focused execution",
-    ],
+    approach: ["Strategy-first roadmap", "Marketing + technology system", "Conversion-focused execution"],
     trustLine: "NZ-ready • Strategy-first • Compete smarter • Measurable outcomes",
   },
 
-  capabilities: [
-    "Web Development",
-    "Mobile Apps",
-    "SEO",
-    "Social Media Marketing",
-    "Content Management",
-  ],
+  capabilities: ["Web Development", "Mobile Apps", "SEO", "Social Media Marketing", "Content Management"],
 
   tools: ["GA4", "Tag Manager", "Meta Ads", "Google Ads", "Search Console", "CMS"],
 
@@ -157,10 +147,26 @@ export const siteConfig = {
   ],
 
   launchPlan: [
-    { days: "Day 1–2", title: "Audit & Discovery", description: "Deep dive into your current setup, goals, and competitive landscape." },
-    { days: "Day 3–5", title: "Strategy Blueprint", description: "Custom roadmap with channels, messaging, and conversion plan." },
-    { days: "Day 6–10", title: "Build & Tracking", description: "Website updates, ad setup, tracking pixels, and landing pages." },
-    { days: "Day 11–14", title: "Launch & Optimise", description: "Go live, monitor performance, and optimise for results." },
+    {
+      days: "Day 1–2",
+      title: "Audit & Discovery",
+      description: "Deep dive into your current setup, goals, and competitive landscape.",
+    },
+    {
+      days: "Day 3–5",
+      title: "Strategy Blueprint",
+      description: "Custom roadmap with channels, messaging, and conversion plan.",
+    },
+    {
+      days: "Day 6–10",
+      title: "Build & Tracking",
+      description: "Website updates, ad setup, tracking pixels, and landing pages.",
+    },
+    {
+      days: "Day 11–14",
+      title: "Launch & Optimise",
+      description: "Go live, monitor performance, and optimise for results.",
+    },
   ],
 
   launchChecklist: [
@@ -172,15 +178,45 @@ export const siteConfig = {
   ],
 
   faqs: [
-    { q: "How long does a typical project take?", a: "Most projects launch within 14 days. Larger builds may take 4–6 weeks depending on scope." },
-    { q: "How does pricing work?", a: "We offer project-based pricing with clear deliverables. No hidden fees. We'll provide a detailed quote after our strategy call." },
-    { q: "What industries do you work with?", a: "We specialise in professional services, trades, e-commerce, and SaaS — but our systems work across industries." },
-    { q: "What do you actually provide?", a: "Strategy, design, development, SEO, paid advertising, content, and ongoing optimisation — everything you need under one roof." },
-    { q: "How often do I get reports?", a: "Weekly performance summaries and monthly deep-dive reports with actionable insights." },
-    { q: "What tools and platforms do you use?", a: "Google Analytics 4, Tag Manager, Meta Ads, Google Ads, Search Console, and modern CMS platforms." },
-    { q: "What should I expect in the first month?", a: "A complete strategy, live campaigns, tracking in place, and early performance data to guide optimisation." },
-    { q: "Do you guarantee results?", a: "We don't make empty guarantees. We commit to transparent reporting, continuous optimisation, and measurable progress towards your goals." },
-    { q: "Can I see my ad and analytics accounts?", a: "Absolutely. You own all accounts and data. Full transparency is a core value." },
-    { q: "What if I already have a website?", a: "We'll audit your existing site and recommend improvements or a rebuild based on what will drive the best results." },
+    {
+      q: "How long does a typical project take?",
+      a: "Most projects launch within 14 days. Larger builds may take 4–6 weeks depending on scope.",
+    },
+    {
+      q: "How does pricing work?",
+      a: "We offer project-based pricing with clear deliverables. No hidden fees. We'll provide a detailed quote after our strategy call.",
+    },
+    {
+      q: "What industries do you work with?",
+      a: "We specialise in professional services, trades, e-commerce, and SaaS — but our systems work across industries.",
+    },
+    {
+      q: "What do you actually provide?",
+      a: "Strategy, design, development, SEO, paid advertising, content, and ongoing optimisation — everything you need under one roof.",
+    },
+    {
+      q: "How often do I get reports?",
+      a: "Weekly performance summaries and monthly deep-dive reports with actionable insights.",
+    },
+    {
+      q: "What tools and platforms do you use?",
+      a: "Google Analytics 4, Tag Manager, Meta Ads, Google Ads, Search Console, and modern CMS platforms.",
+    },
+    {
+      q: "What should I expect in the first month?",
+      a: "A complete strategy, live campaigns, tracking in place, and early performance data to guide optimisation.",
+    },
+    {
+      q: "Do you guarantee results?",
+      a: "We don't make empty guarantees. We commit to transparent reporting, continuous optimisation, and measurable progress towards your goals.",
+    },
+    {
+      q: "Can I see my ad and analytics accounts?",
+      a: "Absolutely. You own all accounts and data. Full transparency is a core value.",
+    },
+    {
+      q: "What if I already have a website?",
+      a: "We'll audit your existing site and recommend improvements or a rebuild based on what will drive the best results.",
+    },
   ],
 } as const;
