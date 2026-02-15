@@ -6,42 +6,42 @@ const capabilities = [
   {
     icon: Globe,
     title: "Web Development",
-    outcome: "Convert visitors into paying clients",
-    points: ["High-converting landing pages", "Fast, mobile-optimised builds"],
+    outcome: "Conversion-focused websites that win inquiries",
+    points: ["Landing pages + CMS", "Performance & SEO-ready"],
   },
   {
     icon: Smartphone,
-    title: "Mobile Apps",
-    outcome: "Reach clients wherever they are",
-    points: ["iOS & Android MVPs", "Seamless user experience"],
+    title: "Mobile App Development",
+    outcome: "Apps built to support growth",
+    points: ["MVP to launch", "Scalable architecture"],
   },
   {
     icon: Search,
     title: "SEO",
-    outcome: "Get found by the right people",
-    points: ["Technical & on-page optimisation", "Content-driven authority"],
+    outcome: "Rank higher and attract intent-driven traffic",
+    points: ["Technical SEO", "Content strategy"],
   },
   {
     icon: Share2,
-    title: "Social Media",
-    outcome: "Build audience & drive inquiries",
-    points: ["Paid campaigns & organic growth", "Platform-specific strategy"],
+    title: "Social Media Marketing",
+    outcome: "Turn attention into clients",
+    points: ["Content plan", "Campaign execution"],
   },
   {
     icon: FileText,
     title: "Content Management",
-    outcome: "Keep your brand fresh & relevant",
-    points: ["Blog & website updates", "Content workflow systems"],
+    outcome: "Consistent content that supports growth",
+    points: ["Website updates", "Blog/content ops"],
   },
 ];
 
 const CredibilitySection = () => (
-  <section className="section-padding bg-background">
+  <section id="services-overview" className="section-padding bg-background">
     <div className="container-narrow mx-auto">
       <div className="text-center">
         <span className="section-badge">Capabilities</span>
         <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-          Capabilities Built for Client Growth
+          What We Offer
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
           Everything you need to attract, convert, and scale — built as one system.
