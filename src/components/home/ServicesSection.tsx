@@ -4,6 +4,14 @@ import { ArrowRight, Globe, Smartphone, Search, Share2, FileText } from "lucide-
 
 const serviceIcons = [Globe, Smartphone, Search, Share2, FileText];
 
+const outcomeTags: string[][] = [
+  ["More inquiries", "Higher conversion"],
+  ["Better reach", "Automation-ready"],
+  ["Better visibility", "Qualified leads"],
+  ["Engaged audience", "Social-driven leads"],
+  ["Fresh content", "SEO authority"],
+];
+
 const ServicesSection = () => (
   <section className="section-padding">
     <div className="container-narrow mx-auto">
@@ -35,6 +43,13 @@ const ServicesSection = () => (
                 <div>
                   <p className="text-xs font-bold uppercase tracking-widest text-gold">Outcomes</p>
                   <p className="mt-1 text-sm text-muted-foreground">{service.outcomes}</p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {outcomeTags[i]?.map((tag) => (
+                      <span key={tag} className="inline-flex items-center rounded-full border border-gold/30 bg-gold/5 px-3 py-1 text-xs font-semibold text-gold">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
                 <Link to="/contact" className="mt-4 inline-flex items-center gap-2 text-sm font-bold transition-colors hover:text-gold">
                   Get Started <ArrowRight className="h-4 w-4" />

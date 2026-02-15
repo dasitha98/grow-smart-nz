@@ -43,13 +43,25 @@ export const siteConfig = {
   ],
 
   redFlags: [
-    "You don't own or have access to your ad accounts",
-    "You can't see where your leads actually come from",
-    "Reports focus on likes and impressions, not revenue",
-    "No dedicated landing pages for campaigns",
-    "No clear strategy roadmap or growth plan",
-    "Your current provider doesn't explain what they're doing",
+    "You don't own the ad or analytics accounts",
+    "Reporting focuses on vanity metrics only",
+    "No conversion tracking or unclear ROI",
+    "More ad spend pushed without fixing landing pages",
+    "No monthly roadmap or deliverables",
+    "Template-locked website that can't scale into a system",
   ],
+
+  companyOverview: {
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    videoCaption: "Watch the 60-second overview (captions included).",
+    founderBullets: [
+      "Founder-led delivery (no outsourcing)",
+      "Clear milestones & weekly updates",
+      "Transparent scope (no surprise costs)",
+      "NZ-ready communication & timelines",
+    ],
+    trustLine: "Founder-led • Clear milestones • Transparent execution",
+  },
 
   pillars: [
     { title: "Attract", description: "Drive qualified traffic through SEO, content & paid channels" },

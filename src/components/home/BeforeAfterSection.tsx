@@ -12,6 +12,9 @@ const BeforeAfterSection = () => (
         <p className="mx-auto mt-3 max-w-lg text-sm text-navy-foreground/50">
           Example targets — what transformation looks like for a typical engagement.
         </p>
+        <p className="mx-auto mt-1 text-xs italic text-navy-foreground/30">
+          *All figures shown are example targets, not guaranteed results.
+        </p>
       </div>
 
       <div className="mt-14 grid items-stretch gap-8 md:grid-cols-[1fr_auto_1fr]">

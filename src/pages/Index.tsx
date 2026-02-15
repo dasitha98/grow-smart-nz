@@ -6,6 +6,7 @@ import CredibilitySection from "@/components/home/CredibilitySection";
 import ProblemsSection from "@/components/home/ProblemsSection";
 import SolutionSection from "@/components/home/SolutionSection";
 import WhyDifferentSection from "@/components/home/WhyDifferentSection";
+import CompanyOverviewSection from "@/components/home/CompanyOverviewSection";
 import CompeteSmarterSection from "@/components/home/CompeteSmarterSection";
 import BeforeAfterSection from "@/components/home/BeforeAfterSection";
 import ServicesSection from "@/components/home/ServicesSection";
@@ -25,6 +26,7 @@ const Index = () => (
       <ProblemsSection />
       <SolutionSection />
       <WhyDifferentSection />
+      <CompanyOverviewSection />
       <CompeteSmarterSection />
       <BeforeAfterSection />
       <ServicesSection />
