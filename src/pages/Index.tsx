@@ -11,7 +11,7 @@ import WhyDifferentSection from "@/components/home/WhyDifferentSection";
 import CompanyOverviewSection from "@/components/home/CompanyOverviewSection";
 import CompeteSmarterSection from "@/components/home/CompeteSmarterSection";
 import BeforeAfterSection from "@/components/home/BeforeAfterSection";
-import ServicesSection from "@/components/home/ServicesSection";
+
 import WorkSection from "@/components/home/WorkSection";
 import LaunchPlanSection from "@/components/home/LaunchPlanSection";
 import FAQSection from "@/components/home/FAQSection";
@@ -33,7 +33,7 @@ const Index = () => (
       <CompanyOverviewSection />
       <CompeteSmarterSection />
       <BeforeAfterSection />
-      <ServicesSection />
+      
       <WorkSection />
       <LaunchPlanSection />
       <FAQSection />
