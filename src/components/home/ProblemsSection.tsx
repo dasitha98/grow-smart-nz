@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/siteConfig";
-import { AlertTriangle, XCircle } from "lucide-react";
+import { Link } from "react-router-dom";
+import { AlertTriangle, XCircle, ArrowRight } from "lucide-react";
 
 const ProblemsSection = () => (
   <section className="soft-gray-section section-padding">
@@ -46,6 +47,12 @@ const ProblemsSection = () => (
             ))}
           </ul>
         </div>
+      </div>
+
+      <div className="mt-10 text-center">
+        <Link to="/contact" className="btn-gold">
+          Request a Free Audit <ArrowRight className="ml-2 h-4 w-4" />
+        </Link>
       </div>
     </div>
   </section>
