@@ -191,12 +191,14 @@ export const siteConfig = {
   ],
 
   clientLogos: [
-    { name: "Client 1", image: "/placeholder.svg", link: "" },
-    { name: "Client 2", image: "/placeholder.svg", link: "" },
-    { name: "Client 3", image: "/placeholder.svg", link: "" },
-    { name: "Client 4", image: "/placeholder.svg", link: "" },
-    { name: "Client 5", image: "/placeholder.svg", link: "" },
-    { name: "Client 6", image: "/placeholder.svg", link: "" },
+    { name: "Kiwi Builders", image: "", link: "" },
+    { name: "NZ Fresh Foods", image: "", link: "" },
+    { name: "Pacific Legal", image: "", link: "" },
+    { name: "AKL Trades", image: "", link: "" },
+    { name: "Summit Property", image: "", link: "" },
+    { name: "Harbour Health", image: "", link: "" },
+    { name: "Coastline Media", image: "", link: "" },
+    { name: "Greenfield Co", image: "", link: "" },
   ],
 
   pitfalls: [

@@ -4,9 +4,9 @@ import { ArrowRight, Play } from "lucide-react";
 
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-background">
-    {/* Subtle gradient orbs */}
-    <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-gold/5 blur-3xl" />
-    <div className="pointer-events-none absolute -bottom-40 -left-40 h-[600px] w-[600px] rounded-full bg-navy/5 blur-3xl" />
+    {/* Subtle gradient orbs — navy-tinted for cohesion */}
+    <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-primary/[0.03] blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-40 -left-40 h-[600px] w-[600px] rounded-full bg-gold/[0.04] blur-3xl" />
 
     <div className="relative section-padding">
       <div className="container-narrow mx-auto">
