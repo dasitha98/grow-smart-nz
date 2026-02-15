@@ -2,8 +2,10 @@ import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import HeroSection from "@/components/home/HeroSection";
+import ClientsPartnersSection from "@/components/home/ClientsPartnersSection";
 import CredibilitySection from "@/components/home/CredibilitySection";
 import ProblemsSection from "@/components/home/ProblemsSection";
+import PitfallsSection from "@/components/home/PitfallsSection";
 import SolutionSection from "@/components/home/SolutionSection";
 import WhyDifferentSection from "@/components/home/WhyDifferentSection";
 import CompanyOverviewSection from "@/components/home/CompanyOverviewSection";
@@ -22,8 +24,10 @@ const Index = () => (
     <Navbar />
     <main>
       <HeroSection />
+      <ClientsPartnersSection />
       <CredibilitySection />
       <ProblemsSection />
+      <PitfallsSection />
       <SolutionSection />
       <WhyDifferentSection />
       <CompanyOverviewSection />

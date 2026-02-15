@@ -190,6 +190,31 @@ export const siteConfig = {
     "Availability for a 30-min kickoff call",
   ],
 
+  clientLogos: [
+    { name: "Client 1", image: "/placeholder.svg", link: "" },
+    { name: "Client 2", image: "/placeholder.svg", link: "" },
+    { name: "Client 3", image: "/placeholder.svg", link: "" },
+    { name: "Client 4", image: "/placeholder.svg", link: "" },
+    { name: "Client 5", image: "/placeholder.svg", link: "" },
+    { name: "Client 6", image: "/placeholder.svg", link: "" },
+  ],
+
+  pitfalls: [
+    { title: "Template websites that can't grow into a system", description: "Looks nice, but limits features as your business grows." },
+    { title: "Third-party dependency", description: "Important upgrades require external developers." },
+    { title: "No foundation for scaling", description: "Tracking, automations, CRM, portals become difficult." },
+    { title: "Surprise budgets when you need real growth", description: "You pay again to rebuild what should've been planned from day one." },
+  ],
+
+  pitfallChecklist: [
+    "You don't get full ownership or admin access",
+    "No clear plan for scaling features (CRM, automations, portals, custom flows)",
+    "Changes take weeks for basic edits",
+    "They recommend \"rebuild\" for every upgrade",
+    "No tracking plan or measurable reporting",
+    "Pricing is unclear (\"extra cost\" for essentials)",
+  ],
+
   faqs: [
     {
       q: "How long does a typical project take?",
