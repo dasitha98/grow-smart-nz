@@ -6,25 +6,7 @@ const CompanyOverviewSection = () => (
   <section id="overview" className="section-padding bg-background">
     <div className="container-narrow mx-auto">
       <div className="grid items-center gap-12 lg:grid-cols-2">
-        {/* Left — Video */}
-        <div>
-          <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
-            <div className="relative aspect-video w-full">
-              <iframe
-                src={siteConfig.companyOverview.videoUrl}
-                title="Company Overview"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 h-full w-full"
-              />
-            </div>
-          </div>
-          <p className="mt-4 text-center text-sm text-muted-foreground">
-            {siteConfig.companyOverview.videoCaption}
-          </p>
-        </div>
-
-        {/* Right — Content */}
+        {/* Left — Content */}
         <div className="text-center lg:text-left">
           <span className="section-badge">Company Overview</span>
           <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Meet the Founder</h2>
@@ -58,6 +40,24 @@ const CompanyOverviewSection = () => (
               See the 14-Day Launch Plan
             </a>
           </div>
+        </div>
+
+        {/* Right — Video */}
+        <div>
+          <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+            <div className="relative aspect-video w-full">
+              <iframe
+                src={siteConfig.companyOverview.videoUrl}
+                title="Company Overview"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 h-full w-full"
+              />
+            </div>
+          </div>
+          <p className="mt-4 text-center text-sm text-muted-foreground">
+            {siteConfig.companyOverview.videoCaption}
+          </p>
         </div>
       </div>
     </div>

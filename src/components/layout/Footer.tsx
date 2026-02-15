@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => (
   <footer className="navy-gradient">
-    <div className="container-narrow mx-auto section-padding pb-8">
+    <div className="container-narrow mx-auto py-20 md:py-28 pb-8">
       <div className="grid gap-12 md:grid-cols-4">
         <div className="md:col-span-1">
           <h3 className="text-xl font-heading font-extrabold text-navy-foreground">{siteConfig.name}</h3>
