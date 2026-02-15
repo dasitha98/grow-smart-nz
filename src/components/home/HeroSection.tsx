@@ -1,55 +1,80 @@
 import { siteConfig } from "@/config/siteConfig";
 import { Link } from "react-router-dom";
-import { CheckCircle, ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import { ArrowRight, Play } from "lucide-react";
 
-const HeroSection = () => (
-  <section className="relative overflow-hidden">
-    {/* Background image with overlay */}
-    <div className="absolute inset-0">
-      <img src={heroBg} alt="" className="h-full w-full object-cover" />
-      <div className="absolute inset-0 bg-navy/85" />
-    </div>
+const HeroSection4 = () => (
+  <section className="relative overflow-hidden bg-background">
+    {/* Subtle gradient orbs */}
+    <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-gold/5 blur-3xl" />
+    <div className="pointer-events-none absolute -bottom-40 -left-40 h-[600px] w-[600px] rounded-full bg-navy/5 blur-3xl" />
 
     <div className="relative section-padding">
       <div className="container-narrow mx-auto">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_1fr]">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          {/* Left — copy */}
           <div>
-            <div className="section-badge mb-6">Digital Marketing & IT Solutions</div>
-            <h1 className="text-4xl font-extrabold leading-[1.1] text-navy-foreground sm:text-5xl lg:text-6xl">
-              <span className="text-gold">{siteConfig.hero.headlineHighlight}</span>{" "}
-              <span>{siteConfig.hero.headline}</span>
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5">
+              <span className="h-2 w-2 animate-pulse rounded-full bg-gold" />
+              <span className="text-xs font-bold uppercase tracking-widest text-gold">Now taking clients</span>
+            </div>
+
+            <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:text-[3.25rem]">
+              Your Next Client Is <span className="text-gold">Already Searching</span> for You Online
             </h1>
-            <p className="mt-6 text-lg text-navy-foreground/70 sm:text-xl">{siteConfig.hero.subheadline}</p>
+
+            <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
+              We make sure they find you — with a strategy-first growth system that combines SEO, paid ads, conversion
+              design, and smart automation.
+            </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <Link to="/contact" className="btn-navy border border-navy-foreground/20 bg-navy-foreground text-navy">
-                {siteConfig.hero.ctaPrimary}
-                <ArrowRight className="ml-2 h-4 w-4" />
+              <Link to="/contact" className="btn-gold text-base">
+                Book Strategy Call <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
-              <Link to="/contact" className="btn-gold">
-                {siteConfig.hero.ctaSecondary}
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 rounded-lg border-2 border-foreground/10 px-6 py-3.5 text-sm font-bold text-foreground transition-all hover:border-gold/40 hover:bg-gold/5"
+              >
+                <Play className="h-4 w-4 fill-gold text-gold" />
+                See How It Works
               </Link>
             </div>
 
-            <p className="mt-8 text-sm font-medium tracking-wide text-navy-foreground/50">
+            <p className="mt-8 text-xs font-semibold uppercase tracking-widest text-muted-foreground/50">
               {siteConfig.hero.trustLine}
             </p>
           </div>
 
-          {/* Our Approach block */}
-          <div className="animate-float rounded-2xl border border-navy-foreground/10 bg-navy-foreground/5 p-8 backdrop-blur-sm lg:p-10">
-            <h2 className="text-sm font-bold uppercase tracking-widest text-gold">Our Approach</h2>
-            <ul className="mt-8 space-y-6">
-              {siteConfig.hero.approach.map((item, i) => (
-                <li key={i} className="flex items-start gap-4">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gold/20">
-                    <CheckCircle className="h-4 w-4 text-gold" />
-                  </div>
-                  <span className="text-base font-medium text-navy-foreground/90">{item}</span>
-                </li>
-              ))}
-            </ul>
+          {/* Right — stacked feature cards */}
+          <div className="space-y-4">
+            {[
+              {
+                num: "01",
+                title: "Attract the Right Traffic",
+                desc: "SEO, content marketing, and targeted paid campaigns bring qualified visitors to your site.",
+              },
+              {
+                num: "02",
+                title: "Convert Visitors to Leads",
+                desc: "High-converting landing pages, compelling CTAs, and smart lead capture forms.",
+              },
+              {
+                num: "03",
+                title: "Scale What Works",
+                desc: "Data-driven optimisation, automated follow-ups, and measurable reporting.",
+              },
+            ].map((card) => (
+              <div
+                key={card.num}
+                className="group flex items-start gap-5 rounded-2xl border border-border bg-background p-6 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:border-gold/30"
+              >
+                <span className="shrink-0 text-2xl font-extrabold text-gold">{card.num}</span>
+                <div>
+                  <h3 className="text-base font-bold text-foreground">{card.title}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{card.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -57,4 +82,4 @@ const HeroSection = () => (
   </section>
 );
 
-export default HeroSection;
+export default HeroSection4;

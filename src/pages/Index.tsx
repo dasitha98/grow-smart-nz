@@ -1,7 +1,7 @@
 import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import HeroSection4 from "@/components/home/HeroSection4";
+import HeroSection from "@/components/home/HeroSection";
 import CredibilitySection from "@/components/home/CredibilitySection";
 import ProblemsSection from "@/components/home/ProblemsSection";
 import SolutionSection from "@/components/home/SolutionSection";
@@ -20,7 +20,7 @@ const Index = () => (
     <TopBar />
     <Navbar />
     <main>
-      <HeroSection4 />
+      <HeroSection />
       <CredibilitySection />
       <ProblemsSection />
       <SolutionSection />
