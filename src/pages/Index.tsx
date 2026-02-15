@@ -20,7 +20,7 @@ const Index = () => (
     <TopBar />
     <Navbar />
     <main>
-      <HeroSection />
+      <HeroSection4 />
       <CredibilitySection />
       <ProblemsSection />
       <SolutionSection />
