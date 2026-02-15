@@ -1,14 +1,46 @@
 import { siteConfig } from "@/config/siteConfig";
 import { Link } from "react-router-dom";
 import { ArrowRight, Play } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import heroBgVideo from "@/assets/hero-bg-video.mp4";
 
-const HeroSection = () => (
-  <section className="relative overflow-hidden bg-background">
-    {/* Subtle gradient orbs — navy-tinted for cohesion */}
-    <div className="pointer-events-none absolute -right-40 -top-40 h-[500px] w-[500px] rounded-full bg-primary/[0.03] blur-3xl" />
-    <div className="pointer-events-none absolute -bottom-40 -left-40 h-[600px] w-[600px] rounded-full bg-gold/[0.04] blur-3xl" />
+const HeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [reducedMotion, setReducedMotion] = useState(false);
 
-    <div className="relative section-padding">
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReducedMotion(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setReducedMotion(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  return (
+    <section className="relative overflow-hidden bg-background">
+      {/* Background video — purely decorative */}
+      {!reducedMotion && (
+        <video
+          ref={videoRef}
+          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-[0.08]"
+          src={heroBgVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-hidden="true"
+          preload="metadata"
+        />
+      )}
+
+      {/* Light overlay to protect readability */}
+      <div className="pointer-events-none absolute inset-0 z-[1] bg-background/85" />
+
+      {/* Subtle gradient orbs — navy-tinted for cohesion */}
+      <div className="pointer-events-none absolute -right-40 -top-40 z-[2] h-[500px] w-[500px] rounded-full bg-primary/[0.03] blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-40 -left-40 z-[2] h-[600px] w-[600px] rounded-full bg-gold/[0.04] blur-3xl" />
+
+      <div className="relative z-[3] section-padding">
       <div className="container-narrow mx-auto">
 
         <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -81,6 +113,7 @@ const HeroSection = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default HeroSection;
