@@ -6,7 +6,7 @@ const ClientsPartnersSection = () => (
       <div className="text-center">
         <span className="section-badge">Trusted By</span>
         <h3 className="mt-4 text-2xl font-bold sm:text-3xl">
-          Clients & Partners
+          Clients &amp; Partners
         </h3>
         <p className="mt-2 text-sm text-muted-foreground">
           Proud to support growing teams across NZ.
@@ -14,7 +14,7 @@ const ClientsPartnersSection = () => (
       </div>
 
       {/* Marquee logo strip */}
-      <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-background p-6 md:p-8">
+      <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-background p-6 shadow-sm md:p-8">
         <div className="relative">
           {/* Fade edges */}
           <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-16 bg-gradient-to-r from-background to-transparent" />
@@ -27,11 +27,11 @@ const ClientsPartnersSection = () => (
                 key={`${logo.name}-${i}`}
                 className="flex shrink-0 items-center justify-center px-4"
               >
-                {logo.link ? (
+                {logo.image ? (
                   <a
-                    href={logo.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={logo.link || undefined}
+                    target={logo.link ? "_blank" : undefined}
+                    rel={logo.link ? "noopener noreferrer" : undefined}
                     className="group"
                   >
                     <img
@@ -41,7 +41,7 @@ const ClientsPartnersSection = () => (
                     />
                   </a>
                 ) : (
-                  <div className="flex h-12 items-center rounded-lg border border-border/50 bg-muted/50 px-6 py-2 opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 hover:border-gold/30">
+                  <div className="flex h-12 items-center rounded-xl border border-border/50 bg-muted/50 px-6 py-2 opacity-60 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0 hover:border-gold/30">
                     <span className="text-sm font-semibold text-muted-foreground whitespace-nowrap">{logo.name}</span>
                   </div>
                 )}

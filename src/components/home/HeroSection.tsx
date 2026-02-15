@@ -10,6 +10,7 @@ const HeroSection = () => (
 
     <div className="relative section-padding">
       <div className="container-narrow mx-auto">
+
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Left — copy (centered on mobile/tablet, left on desktop) */}
           <div className="text-center lg:text-left">

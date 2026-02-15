@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <div className="container-narrow mx-auto flex items-center justify-between px-4 py-4">
+      <div className="container-narrow mx-auto flex items-center justify-between py-4">
         <Link to="/" className="text-xl font-heading font-extrabold tracking-tight text-foreground">
           {siteConfig.name}
         </Link>
