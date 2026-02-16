@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/siteConfig";
 import { Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
+import SocialIcons from "./SocialIcons";
 
 const TopBar = () => (
   <div className="bg-navy text-navy-foreground">
@@ -15,6 +16,7 @@ const TopBar = () => (
           <Mail className="h-3.5 w-3.5" />
           <span className="hidden md:inline">{siteConfig.email}</span>
         </a>
+        <SocialIcons iconClassName="text-navy-foreground/70 hover:text-gold" />
         <Link
           to="/contact"
           className="rounded bg-gold px-3 py-1 text-xs font-semibold text-gold-foreground transition-colors hover:bg-gold/90"
