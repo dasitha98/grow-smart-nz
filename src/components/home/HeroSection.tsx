@@ -22,7 +22,7 @@ const HeroSection = () => {
       {!reducedMotion && (
         <video
           ref={videoRef}
-          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-[0.08]"
+          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-[0.35]"
           src={heroBgVideo}
           autoPlay
           loop
@@ -34,7 +34,7 @@ const HeroSection = () => {
       )}
 
       {/* Light overlay to protect readability */}
-      <div className="pointer-events-none absolute inset-0 z-[1] bg-background/85" />
+      <div className="pointer-events-none absolute inset-0 z-[1] bg-background/60" />
 
       {/* Subtle gradient orbs — navy-tinted for cohesion */}
       <div className="pointer-events-none absolute -right-40 -top-40 z-[2] h-[500px] w-[500px] rounded-full bg-primary/[0.03] blur-3xl" />
