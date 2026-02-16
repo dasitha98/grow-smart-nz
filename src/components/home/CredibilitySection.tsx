@@ -51,7 +51,7 @@ const capabilities = [
 ];
 
 const CredibilitySection = () => (
-  <section id="services-overview" className="section-padding bg-background">
+  <section id="offer" className="section-padding bg-background">
     <div className="container-narrow mx-auto">
       <div className="text-center">
         <span className="section-badge">Capabilities</span>

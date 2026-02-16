@@ -12,7 +12,7 @@ const WorkSection = () => {
   const items = activeTab === "sample" ? sampleWork : buildingWork;
 
   return (
-    <section className="section-padding bg-background">
+    <section id="work" className="section-padding bg-background">
       <div className="container-narrow mx-auto">
         <div className="text-center">
           <span className="section-badge">

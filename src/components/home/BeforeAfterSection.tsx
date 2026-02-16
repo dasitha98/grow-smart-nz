@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { ArrowRight, X, Check } from "lucide-react";
 
 const BeforeAfterSection = () => (
-  <section className="navy-gradient section-padding">
+  <section id="before-after" className="navy-gradient section-padding">
     <div className="container-narrow mx-auto text-navy-foreground">
       <div className="text-center">
         <span className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold">
