@@ -6,12 +6,15 @@ import SocialIcons from "./SocialIcons";
 const TopBar = () => (
   <div className="bg-navy text-navy-foreground">
     <div className="container-narrow mx-auto flex items-center justify-between py-2 text-sm">
+      {/* Left text only on lg+ */}
       <span className="hidden font-medium lg:block">Book Your Free Strategy Session</span>
-      <div className="flex items-center justify-between lg:justify-start gap-4 sm:gap-6">
-        {/* Left side (always left on mobile & tablet) */}
+
+      {/* Main content */}
+      <div className="flex w-full items-center justify-between lg:w-auto lg:justify-start gap-4 sm:gap-6">
+        {/* Left on mobile & tablet */}
         <SocialIcons iconClassName="text-navy-foreground/70 hover:text-gold" />
 
-        {/* Right side on mobile & tablet, inline on desktop */}
+        {/* Right on mobile & tablet */}
         <div className="flex items-center gap-4 sm:gap-6">
           <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-1.5 transition-colors hover:text-gold">
             <Phone className="h-3.5 w-3.5" />
