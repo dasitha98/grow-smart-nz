@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const FinalCTASection = () => (
-  <section className="navy-gradient section-padding">
+  <section id="final-cta" className="navy-gradient section-padding">
     <div className="container-narrow mx-auto text-center text-navy-foreground">
       <span className="inline-flex items-center rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold">
         Let's Talk

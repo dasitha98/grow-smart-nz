@@ -16,11 +16,13 @@ import LaunchPlanSection from "@/components/home/LaunchPlanSection";
 import FAQSection from "@/components/home/FAQSection";
 import FinalCTASection from "@/components/home/FinalCTASection";
 import ContactFormSection from "@/components/home/ContactFormSection";
+import ScrollDotsNav from "@/components/shared/ScrollDotsNav";
 
 const Index = () => (
   <>
     <TopBar />
     <Navbar />
+    <ScrollDotsNav />
     <main>
       <HeroSection />
       <ClientsPartnersSection />

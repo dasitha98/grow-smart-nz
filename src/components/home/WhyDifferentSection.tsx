@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Check } from "lucide-react";
 
 const WhyDifferentSection = () => (
-  <section className="section-padding bg-background">
+  <section id="different" className="section-padding bg-background">
     <div className="container-narrow mx-auto">
       <div className="text-center">
         <span className="section-badge">Our Edge</span>

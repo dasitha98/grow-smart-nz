@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AlertTriangle, XCircle, ArrowRight } from "lucide-react";
 
 const ProblemsSection = () => (
-  <section className="soft-gray-section section-padding">
+  <section id="problems" className="soft-gray-section section-padding">
     <div className="container-narrow mx-auto">
       <div className="text-center">
         <span className="section-badge">Identify the Gaps</span>
