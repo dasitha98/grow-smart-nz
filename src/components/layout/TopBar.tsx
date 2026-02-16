@@ -6,7 +6,7 @@ import SocialIcons from "./SocialIcons";
 const TopBar = () => (
   <div className="bg-navy text-navy-foreground">
     <div className="container-narrow mx-auto flex items-center justify-between py-2 text-sm">
-      <span className="hidden font-medium md:hidden sm:block">Book Your Free Strategy Session</span>
+      <span className="hidden font-medium lg:hidden">Book Your Free Strategy Session</span>
       <div className="flex items-center gap-4 sm:gap-6">
         <SocialIcons iconClassName="text-navy-foreground/70 hover:text-gold" />
         <a href={`tel:${siteConfig.phone}`} className="flex items-center gap-1.5 transition-colors hover:text-gold">
