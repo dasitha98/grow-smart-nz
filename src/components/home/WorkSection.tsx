@@ -44,7 +44,7 @@ const WorkSection = () => {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-items-center ">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
           {items.map((work, i) => (
             <div key={i} className="card-elevated flex flex-col p-7 transition-all duration-300">
               <span
