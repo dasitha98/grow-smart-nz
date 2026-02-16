@@ -9,7 +9,6 @@ import PitfallsSection from "@/components/home/PitfallsSection";
 import SolutionSection from "@/components/home/SolutionSection";
 import WhyDifferentSection from "@/components/home/WhyDifferentSection";
 import CompanyOverviewSection from "@/components/home/CompanyOverviewSection";
-import CompeteSmarterSection from "@/components/home/CompeteSmarterSection";
 import BeforeAfterSection from "@/components/home/BeforeAfterSection";
 
 import WorkSection from "@/components/home/WorkSection";
@@ -31,7 +30,6 @@ const Index = () => (
       <SolutionSection />
       <WhyDifferentSection />
       <CompanyOverviewSection />
-      <CompeteSmarterSection />
       <BeforeAfterSection />
       
       <WorkSection />

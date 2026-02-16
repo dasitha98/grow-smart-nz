@@ -4,7 +4,7 @@ import { Zap, MousePointerClick, RefreshCcw, TrendingUp } from "lucide-react";
 const icons = [Zap, MousePointerClick, RefreshCcw, TrendingUp];
 
 const SolutionSection = () => (
-  <section className="section-padding">
+  <section className="soft-gray-section section-padding">
     <div className="container-narrow mx-auto">
       <div className="text-center">
         <span className="section-badge">Our System</span>
