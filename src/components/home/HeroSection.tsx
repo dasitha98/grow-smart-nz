@@ -22,7 +22,7 @@ const HeroSection = () => {
       {!reducedMotion && (
         <video
           ref={videoRef}
-          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-[0.45]"
+          className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-[0.35]"
           src={heroBgVideo}
           autoPlay
           loop
