@@ -2,6 +2,7 @@ import { useState } from "react";
 import { siteConfig } from "@/config/siteConfig";
 import { Link } from "react-router-dom";
 import { Send, Phone, Mail } from "lucide-react";
+import SocialIcons from "@/components/layout/SocialIcons";
 
 const ContactFormSection = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -73,6 +74,11 @@ const ContactFormSection = () => {
             </p>
           </form>
         )}
+
+        <div className="mt-8 flex items-center justify-center gap-3">
+          <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">Follow us</span>
+          <SocialIcons iconClassName="text-muted-foreground hover:text-gold" />
+        </div>
       </div>
     </section>
   );

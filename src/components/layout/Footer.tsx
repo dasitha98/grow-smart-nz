@@ -1,5 +1,6 @@
 import { siteConfig } from "@/config/siteConfig";
 import { Link } from "react-router-dom";
+import SocialIcons from "./SocialIcons";
 
 const Footer = () => (
   <footer className="navy-gradient">
@@ -38,13 +39,7 @@ const Footer = () => (
             <li><a href={`tel:${siteConfig.phone}`} className="text-sm text-navy-foreground/50 transition-colors hover:text-gold">{siteConfig.phone}</a></li>
             <li><a href={`mailto:${siteConfig.email}`} className="text-sm text-navy-foreground/50 transition-colors hover:text-gold">{siteConfig.email}</a></li>
           </ul>
-          <div className="mt-5 flex gap-4">
-            {Object.entries(siteConfig.social).map(([name, url]) => (
-              <a key={name} href={url} target="_blank" rel="noopener noreferrer" className="text-xs font-medium capitalize text-navy-foreground/40 transition-colors hover:text-gold">
-                {name}
-              </a>
-            ))}
-          </div>
+          <SocialIcons className="mt-5" iconClassName="text-navy-foreground/50 hover:text-gold" />
         </div>
       </div>
 

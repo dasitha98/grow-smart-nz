@@ -7,9 +7,10 @@ export const siteConfig = {
   website: "https://digitaledge.co.nz",
 
   social: {
-    linkedin: "https://linkedin.com/company/digitaledge-nz",
     facebook: "https://facebook.com/digitaledgenz",
     instagram: "https://instagram.com/digitaledgenz",
+    tiktok: "https://tiktok.com/@digitaledgenz",
+    linkedin: "https://linkedin.com/company/digitaledge-nz",
   },
 
   nav: [
