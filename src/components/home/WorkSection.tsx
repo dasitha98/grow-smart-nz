@@ -12,12 +12,10 @@ const WorkSection = () => {
   const items = activeTab === "sample" ? sampleWork : buildingWork;
 
   return (
-    <section id="work" className="section-padding bg-background">
+    <section className="section-padding bg-background">
       <div className="container-narrow mx-auto">
         <div className="text-center">
-          <span className="section-badge">
-            Portfolio
-          </span>
+          <span className="section-badge">Portfolio</span>
           <h2 className="mt-4 text-3xl font-bold sm:text-4xl">Work & Builds</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
             A look at what we're building. Real case studies coming soon.
@@ -28,9 +26,7 @@ const WorkSection = () => {
             <button
               onClick={() => setActiveTab("sample")}
               className={`rounded-full px-5 py-2 text-sm font-bold transition-all ${
-                activeTab === "sample"
-                  ? "bg-gold text-gold-foreground"
-                   : "text-muted-foreground hover:text-foreground"
+                activeTab === "sample" ? "bg-gold text-gold-foreground" : "text-muted-foreground hover:text-foreground"
               }`}
             >
               Sample Work
@@ -48,21 +44,27 @@ const WorkSection = () => {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 justify-items-center ">
           {items.map((work, i) => (
             <div key={i} className="card-elevated flex flex-col p-7 transition-all duration-300">
-              <span className={`inline-block self-start rounded-full px-3.5 py-1 text-xs font-bold ${
-                work.label === "Sample"
-                  ? "bg-gold/20 text-gold"
-                  : "border border-border text-muted-foreground"
-              }`}>
+              <span
+                className={`inline-block self-start rounded-full px-3.5 py-1 text-xs font-bold ${
+                  work.label === "Sample" ? "bg-gold/20 text-gold" : "border border-border text-muted-foreground"
+                }`}
+              >
                 {work.label}
               </span>
               <h3 className="mt-5 text-lg font-bold">{work.title}</h3>
-               <div className="mt-4 flex-1 space-y-3 text-sm text-muted-foreground">
-                <p><strong className="text-foreground/80">Problem:</strong> {work.problem}</p>
-                <p><strong className="text-foreground/80">Approach:</strong> {work.approach}</p>
-                <p><strong className="text-foreground/80">Expected:</strong> {work.outcome}</p>
+              <div className="mt-4 flex-1 space-y-3 text-sm text-muted-foreground">
+                <p>
+                  <strong className="text-foreground/80">Problem:</strong> {work.problem}
+                </p>
+                <p>
+                  <strong className="text-foreground/80">Approach:</strong> {work.approach}
+                </p>
+                <p>
+                  <strong className="text-foreground/80">Expected:</strong> {work.outcome}
+                </p>
               </div>
               <Link
                 to={`/work/${i}`}
