@@ -47,7 +47,9 @@ const HeroSection = () => {
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/5 px-4 py-1.5">
                 <span className="h-2 w-2 animate-pulse rounded-full bg-gold" />
-                <span className="text-xs font-bold uppercase tracking-widest text-gold">Now taking clients</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-gold">
+                  Digital Marketing & IT Solutions
+                </span>
               </div>
 
               <h1 className="mx-auto mt-6 max-w-xl text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:mx-0 lg:max-w-none lg:text-[3.25rem]">
