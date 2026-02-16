@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AlertTriangle, CheckCircle, ArrowRight } from "lucide-react";
 
 const PitfallsSection = () => (
-  <section id="pitfalls" className="soft-gray-section section-padding">
+  <section id="pitfalls" className="section-padding bg-background">
     <div className="container-narrow mx-auto">
       <div className="text-center">
         <span className="section-badge">Before You Commit</span>

@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 
 const FAQSection = () => (
-  <section className="soft-gray-section section-padding">
+  <section className="section-padding bg-background">
     <div className="container-narrow mx-auto max-w-3xl">
       <div className="text-center">
         <span className="section-badge">Common Questions</span>
