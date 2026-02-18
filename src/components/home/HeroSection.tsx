@@ -17,7 +17,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="relative overflow-hidden bg-background">
+    <section className="relative overflow-hidden bg-background">
       {/* Background video — purely decorative */}
       {!reducedMotion && (
         <video
@@ -52,7 +52,7 @@ const HeroSection = () => {
                 </span>
               </div>
 
-              <h1 className="mx-auto mt-6 max-w-xl text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:mx-0 lg:max-w-none lg:text-[3.25rem]">
+              <h1 className="mx-auto mt-6 max-w-xl text-4xl font-extrabold leading-[3.08] tracking-tight text-foreground sm:text-5xl lg:mx-0 lg:max-w-none lg:text-[3.25rem]">
                 Your Next Client Is <span className="text-gold">Already Searching</span> for You Online
               </h1>
 
