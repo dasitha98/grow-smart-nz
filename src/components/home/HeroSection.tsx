@@ -52,7 +52,7 @@ const HeroSection = () => {
                 </span>
               </div>
 
-              <h1 className="mx-auto mt-6 max-w-xl text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:mx-0 lg:max-w-none lg:text-[3.25rem] [word-spacing:1.2em]">
+              <h1 className="mx-auto mt-6 max-w-xl text-4xl font-extrabold leading-[1.08] tracking-tight text-foreground sm:text-5xl lg:mx-0 lg:max-w-none lg:text-[3.25rem] [word-spacing:0.5em]">
                 Your Next Client Is <span className="text-gold">Already Searching</span> for You Online
               </h1>
 
