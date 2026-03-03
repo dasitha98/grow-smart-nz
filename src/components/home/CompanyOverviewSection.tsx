@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 const CompanyOverviewSection = () => (
-  <section id="overview" className="soft-gray-section section-padding">
+  <section id="overview" className="section-padding bg-background">
     <div className="container-narrow mx-auto">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         {/* Left — Content */}

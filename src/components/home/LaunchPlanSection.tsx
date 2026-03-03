@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { CheckCircle } from "lucide-react";
 
 const LaunchPlanSection = () => (
-  <section id="launch-plan" className="soft-gray-section section-padding">
+  <section id="launch-plan" className="section-padding bg-background">
     <div className="container-narrow mx-auto">
       <div className="text-center">
         <span className="section-badge">The Process</span>
