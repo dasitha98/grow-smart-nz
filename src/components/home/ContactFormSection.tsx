@@ -13,7 +13,7 @@ const ContactFormSection = () => {
   };
 
   return (
-    <section id="contact" className="section-padding">
+    <section id="contact" className="soft-gray-section section-padding">
       <div className="container-narrow mx-auto max-w-3xl">
         <div className="text-center">
           <span className="section-badge">Get in Touch</span>

@@ -63,11 +63,11 @@ const CredibilitySection = () => (
         </p>
       </div>
 
-      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-14 flex flex-wrap justify-center gap-6">
         {capabilities.map((cap) => (
           <div
             key={cap.title}
-            className="card-elevated flex flex-col p-6"
+            className="card-elevated flex w-full flex-col p-6 sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
           >
             <div className="gold-icon-box mb-4">
               <cap.icon className="h-6 w-6 text-gold" />
